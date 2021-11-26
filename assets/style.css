@@ -32,11 +32,11 @@ header h1{
     font-size: 36px;
     background: var(--secondary-color);
     margin: 0;
-    color: var(--primary-color);
 }
 
 header a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 header nav{
@@ -67,6 +67,7 @@ header nav ul li a:hover {
 
 /*---- hero ---------------*/
 .hero {
+    display: flex;
     background-image: url(./images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -94,9 +95,9 @@ body {
     max-width: 85%;
     margin-top: 20px;
     margin-bottom: 40px;
-    justify-content: center;
 }
 
+    /*---main use of flexbox througout the portfolio*/
 .main-section {
     display: flex;
     margin: 25px 0;
@@ -106,21 +107,17 @@ body {
     justify-content: space-between;
 }
 
+    /*--- flex sets the spacing of the section titile column and the main group column!!! */
 .section-title {
     padding-right: 15px;
-    line-height: 1.2;
     font-weight: bold;
-    flex: 0 0 20%;
+    flex: 0 0 25%;
     text-align: right;
     border-right: var(--primary-color) solid 4px;
 }
 
-.section-title h2 {
-    justify-content: flex-end;
-}
-
 .group {
-    flex: 0 0 75%;
+    flex: 0 0 70%;
 }
 
 .group p {
@@ -128,10 +125,26 @@ body {
 }
 
 /*---- my work ------------*/
-.work-example img{
+.work-section{
+
+}
+
+.work-section img {
     min-height: 100px;
     max-height: 250px;
+    border: var(--tertiary-color) 5px solid;
+}
 
+.work-section:first-child{
+
+}
+
+
+.work-example {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    padding: 5px 0;
 }
 
 /*---- contact me ---------*/
