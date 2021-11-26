@@ -126,25 +126,59 @@ body {
 
 /*---- my work ------------*/
 .work-section{
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.work-section img {
-    min-height: 100px;
-    max-height: 250px;
-    border: var(--tertiary-color) 5px solid;
+.project{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    border: var(--tertiary-color) solid 5px;
+    max-height: 550px;
+    max-width: 350px;
+    height: 200px;
+    width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .5rem;
 }
-
 .work-section:first-child{
 
 }
 
-
+/*git rid of the underline*/
 .work-example {
-    display: flex;
-    flex-direction: column;
     background-color: var(--tertiary-color);
-    padding: 5px 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.work-example h3 {
+    text-decoration: none;
+}
+
+/* images */
+.p1 {
+    background-image: url(./images/placeholder1.jpg);
+}
+
+.p2 {
+    background-image: url(./images/placeholder2.jpg);
+}
+
+.p3 {
+    background-image: url(./images/placeholder3.jpg);
+}
+
+.p4 {
+    background-image: url(./images/placeholder4.jpg);
+}
+
+.p5 {
+    background-image: url(./images/placeholder5.jpg);
 }
 
 /*---- contact me ---------*/
