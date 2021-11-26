@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color:#2F3E46 ;
-    --secondary-color:#CAD2C5 ;
-    --tertiary-color:#84A98C ;
+    --primary-color:#391a14 ;
+    --secondary-color:#af9a8d ;
+    --tertiary-color:#9e5a48 ;
 }
 
 /* header -------------------------------------------------------------------------*/
@@ -63,24 +63,69 @@ header nav ul li a {
 header nav ul li a:hover {
     background: var(--tertiary-color);
     color: var(--primary-color);
-  }
-/* body ---------------------------------------------------------------------------*/
-section {
+}
 
+/*---- hero ---------------*/
+.hero {
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    padding: 3% 5%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--primary-color);
+}
+
+.hero h2 {
+    background-color: var(--secondary-color);
+    padding: 5px 15px;
+    font-size: 2vw;
+}
+
+/* body ---------------------------------------------------------------------------*/
+body {
+    background-color: #e7e7e7;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+.page-content {
+    max-width: 85%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.main-section {
+    display: flex;
+    margin: 25px 0;
+    padding: 10px 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .section-title {
-
+    padding-right: 15px;
+    line-height: 1.2;
+    font-weight: bold;
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: var(--primary-color) solid 4px;
 }
 
-.text {
-
+.section-title h2 {
+    justify-content: flex-end;
 }
-/*---- hero ---------------*/
-.hero h2 {
 
+.group {
+    flex: 0 0 75%;
 }
-/*---- about me -----------*/
+
+.group p {
+    margin-bottom: 20px;
+}
 
 /*---- my work ------------*/
 .work-example img{
@@ -90,6 +135,18 @@ section {
 }
 
 /*---- contact me ---------*/
-
+.group ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.group ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: var(--primary-color) 3px solid;
+    margin-bottom: 3px;
+}
 /* footer -------------------------------------------------------------------------*/
 
