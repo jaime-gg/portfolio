@@ -69,7 +69,7 @@ header nav ul li a:hover {
 /*---- hero ---------------*/
 .hero {
     display: flex;
-    background-image: url(./assets/images/hero.jpg);
+    background-image: url(./images/hero.jpg);
     background-size: cover;
     background-position: center;
     min-height: 38vh;
@@ -169,7 +169,7 @@ body {
 
 /*----images --------------*/
 .p1 {
-    background-image: url(../assets/images/placeholder1.jpg);
+    background-image: url(./images/placeholder1.jpg);
 }
 
 .p2 {
